@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import Content from './useEffectWithPreviewAvatar';
+import Content from './useEffectWithFakeChatApp';
 
 function App() {
 
