@@ -1,15 +1,12 @@
-import { useState } from 'react'
-import Content from './useRef';
+import { useState, useMemo } from 'react'
+import Content from './useReducer';
 
 function App() {
-
-  const [mounted, setMounted] = useState(false)
   return (
-    <div className="App">
-      <button onClick={() => setMounted(!mounted)}>Toggle</button>
-      <div>{mounted && <Content></Content>}</div>
+    <div className="App" style={{ padding: '10px 30px' }}>
+      <Content/>
     </div>
-  );
+  )
 }
 
 export default App;
